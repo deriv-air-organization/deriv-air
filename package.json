@@ -2,8 +2,8 @@
   "name": "solito-expo-router",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "packages/apps/*",
+    "packages/shared/*"
   ],
   "devDependencies": {
     "@types/react": "^18.0.17",
@@ -13,8 +13,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next"
+    "native": "cd packages/apps/expo && expo start",
+    "web": "cd packages/apps/next && yarn next"
   },
   "resolutions": {
     "metro": "0.72.3"

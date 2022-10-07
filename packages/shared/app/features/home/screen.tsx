@@ -1,4 +1,4 @@
-import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
+import { A, H1, P, Row, Text, useSx, View } from 'dripsy'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
 
