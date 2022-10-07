@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Deriv Air",
+    "slug": "deriv-air",
+    "version": "1.0.0",
+    "scheme": "com.deriv.air",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.deriv.air"
+    },
+    "android": {
+      "package": "com.deriv.air"
+    }
+  }
+}

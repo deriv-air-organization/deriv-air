@@ -1,5 +1,5 @@
 {
-  "name": "solito-expo-router",
+  "name": "@deriv-air/root",
   "private": true,
   "workspaces": [
     "packages/apps/*",
@@ -13,8 +13,15 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "native": "cd packages/apps/expo && expo start",
-    "web": "cd packages/apps/next && yarn next"
+    "mobile:start": "yarn workspace @deriv-air/mobile start",
+    "mobile:android": "yarn workspace @deriv-air/mobile android",
+    "mobile:android:build": "yarn workspace @deriv-air/mobile android:build",
+    "mobile:ios": "yarn workspace @deriv-air/mobile ios",
+    "mobile:ios:build": "yarn workspace @deriv-air/mobile ios:build",
+    "web": "yarn workspace @deriv-air/web next",
+    "web:build": "yarn workspace @deriv-air/web build",
+    "tsc": "tsc",
+    "lint": "eslint ."
   },
   "resolutions": {
     "metro": "0.72.3"

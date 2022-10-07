@@ -1,4 +1,4 @@
-import { Provider } from 'app/provider'
+import { Provider } from '@deriv-air/example/provider'
 import { NativeStack } from 'expo-router'
 
 export default function Root() {

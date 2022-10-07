@@ -2,7 +2,7 @@ module.exports = {
   extends: 'next',
   settings: {
     next: {
-      rootDir: 'apps/next/',
+      rootDir: 'packages/apps/next/',
     },
   },
   root: true,

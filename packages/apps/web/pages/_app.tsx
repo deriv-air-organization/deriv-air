@@ -11,7 +11,7 @@ const fixReanimatedIssue = () => {
 
 fixReanimatedIssue()
 
-import { Provider } from 'app/provider'
+import { Provider } from '@deriv-air/example/provider'
 import Head from 'next/head'
 import React from 'react'
 import type { SolitoAppProps } from 'solito'
