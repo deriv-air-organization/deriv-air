@@ -1,1 +1,1 @@
-/// <reference types="app/rnw-overrides" />
+/// <reference types="@deriv-air/example/rnw-overrides" />

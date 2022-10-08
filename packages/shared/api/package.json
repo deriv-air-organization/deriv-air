@@ -1,0 +1,16 @@
+{
+  "version": "0.0.0",
+  "name": "@deriv-air/api",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint --ext js,ts,tsx ."
+  },
+  "dependencies": {
+    "@deriv/deriv-api": "^1.0.8"
+  },
+  "devDependencies": {
+    "@deriv/api-types": "^1.0.54"
+  },
+  "sideEffects": false
+}

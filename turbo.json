@@ -1,8 +1,22 @@
 {
+  "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
+    "tsc": {
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "dependsOn": ["^build"]
+    },
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**"]
+      "outputs": [".next/**", "build/**", "node_modules/.cache/metro/**"]
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "inputs": ["**/*.{ts,tsx,js,jsx}"]
     }
   }
 }

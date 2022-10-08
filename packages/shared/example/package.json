@@ -2,7 +2,12 @@
   "version": "0.0.0",
   "name": "@deriv-air/example",
   "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint --ext js,ts,tsx ."
+  },
   "dependencies": {
+    "@deriv-air/api": "*",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
     "dripsy": "^3.6.0",
