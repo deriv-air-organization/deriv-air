@@ -1,8 +1,8 @@
 import DerivAPIBasic from '@deriv/deriv-api/dist/DerivAPIBasic.js'
 
 let api: {
-  send: (props) => Promise<any>
-  subscribe: (props) => { subscribe: (onData, onError) => any }
+  send: (props: any) => Promise<any>
+  subscribe: (props: any) => { subscribe: (onData: any, onError: any) => any }
 }
 
 export const useAPI = () => {
