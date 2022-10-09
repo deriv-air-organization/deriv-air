@@ -10,6 +10,11 @@
     },
     "android": {
       "package": "com.deriv.air"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3f6f398b-7833-4d0e-b0e1-5958aa6cd4b3"
+      }
     }
   }
 }

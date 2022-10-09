@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "tsc": "tsc",
-    "lint": "eslint --ext js,ts,tsx .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "dev": "expo start --dev-client",
     "build": "expo export --output-dir ./build --platform all",
     "start": "expo start --dev-client",

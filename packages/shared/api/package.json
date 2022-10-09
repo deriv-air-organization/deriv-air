@@ -4,7 +4,7 @@
   "main": "index.ts",
   "scripts": {
     "tsc": "tsc",
-    "lint": "eslint --ext js,ts,tsx ."
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@deriv/deriv-api": "^1.0.8"

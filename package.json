@@ -30,6 +30,10 @@
   },
   "nohoist": [
     "**/expo-router",
-    "**/expo-router/**"
+    "**/expo-router/**",
+    "**/react",
+    "**/react/**",
+    "**/react-native",
+    "**/react-native/**"
   ]
 }
