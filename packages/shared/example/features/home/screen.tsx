@@ -1,5 +1,6 @@
 import useWS from '@deriv-air/api/hooks/useWS'
 import { H1, P, useSx, View } from 'dripsy'
+import React from 'react'
 import { Button } from 'react-native'
 import { TextLink } from 'solito/link'
 

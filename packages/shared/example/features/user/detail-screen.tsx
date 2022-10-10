@@ -1,4 +1,5 @@
 import { Text, View } from 'dripsy'
+import React from 'react'
 import { createParam } from 'solito'
 import { TextLink } from 'solito/link'
 

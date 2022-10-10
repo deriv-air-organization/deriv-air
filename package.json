@@ -10,7 +10,7 @@
     "@types/react-native": "^0.69.5",
     "eslint": "^8.21.0",
     "turbo": "^1.4.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.3"
   },
   "scripts": {
     "tsc": "turbo tsc",
@@ -30,10 +30,6 @@
   },
   "nohoist": [
     "**/expo-router",
-    "**/expo-router/**",
-    "**/react",
-    "**/react/**",
-    "**/react-native",
-    "**/react-native/**"
+    "**/expo-router/**"
   ]
 }

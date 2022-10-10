@@ -1,10 +1,11 @@
+import { NativeNavigation } from '@deriv-air/example/navigation/native'
+import { Provider } from '@deriv-air/example/provider'
 import React from 'react'
-import { Text, View } from 'react-native'
 
 export default function App() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Deriv Air</Text>
-    </View>
+    <Provider>
+      <NativeNavigation />
+    </Provider>
   )
 }
