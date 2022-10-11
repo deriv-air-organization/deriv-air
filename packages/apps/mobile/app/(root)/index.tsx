@@ -1,5 +1,5 @@
-import { HomeScreen } from '@deriv-air/example/features/home/screen'
+import { TraderScreen } from '@deriv-air/trader/screen'
 
-export default function Home() {
-  return <HomeScreen />
+export default function Trader() {
+  return <TraderScreen />
 }

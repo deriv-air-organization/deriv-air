@@ -3,7 +3,7 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "@deriv-air/*": ["./packages/shared/*"]
+      "@deriv-air/*": ["./packages/shared/*", "./packages/modules/*"]
     }
   },
   "extends": "expo/tsconfig.base"
