@@ -79,7 +79,7 @@ import com.android.build.OutputFile
 
 project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
-    cliPath: '../../../../../node_modules/react-native/cli.js',
+    cliPath: "../../../../../node_modules/react-native/cli.js",
     entryFile: "packages/apps/native/index.js",
 ]
 
@@ -98,7 +98,7 @@ def enableSeparateBuildPerCPUArchitecture = true
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore.

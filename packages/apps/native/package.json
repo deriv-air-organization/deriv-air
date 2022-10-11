@@ -10,7 +10,8 @@
     "test": "jest",
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios"
+    "android:build": "react-native run-android --variant=release",
+    "ios": "react-native run-ios --simulator 'iPhone 14 Pro Max'"
   },
   "dependencies": {
     "@deriv-air/example": "*",
