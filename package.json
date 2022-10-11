@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "packages/apps/*",
-    "packages/shared/*"
+    "packages/shared/*",
+    "packages/modules/*"
   ],
   "devDependencies": {
     "@types/react": "^18.0.17",

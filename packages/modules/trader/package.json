@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "@deriv-air/example",
+  "name": "@deriv-air/trader",
   "main": "index.ts",
   "scripts": {
     "tsc": "tsc",
@@ -8,10 +8,8 @@
   },
   "dependencies": {
     "@deriv-air/api": "*",
-    "@react-navigation/native": "^6.0.8",
-    "@react-navigation/native-stack": "^6.5.0",
+    "@deriv-air/components": "*",
     "dripsy": "^3.6.0",
-    "expo-linking": "^3.0.0",
     "moti": "0.19.0-alpha.6",
     "react-native-reanimated": "2.9.1",
     "solito": "latest"

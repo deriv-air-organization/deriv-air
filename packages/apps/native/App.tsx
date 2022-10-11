@@ -1,11 +1,11 @@
-import { NativeNavigation } from '@deriv-air/example/navigation/native'
-import { Provider } from '@deriv-air/example/provider'
+import { Provider as ComponentsProvider } from '@deriv-air/components/provider'
 import React from 'react'
+import { Navigation } from './Navigation'
 
 export default function App() {
   return (
-    <Provider withNavigation>
-      <NativeNavigation />
-    </Provider>
+    <ComponentsProvider>
+      <Navigation />
+    </ComponentsProvider>
   )
 }

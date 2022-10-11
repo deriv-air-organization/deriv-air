@@ -7,8 +7,10 @@ const withTM = require('next-transpile-modules')([
   'dripsy',
   '@dripsy/core',
   'moti',
-  '@deriv-air/example',
   '@deriv-air/api',
+  '@deriv-air/components',
+  '@deriv-air/reports',
+  '@deriv-air/trader',
 ])
 
 /** @type {import('next').NextConfig} */

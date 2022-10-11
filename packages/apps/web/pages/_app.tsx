@@ -11,7 +11,7 @@ const fixReanimatedIssue = () => {
 
 fixReanimatedIssue()
 
-import { Provider } from '@deriv-air/example/provider'
+import { Provider as ComponentsProvider } from '@deriv-air/components/provider'
 import Head from 'next/head'
 import React from 'react'
 import type { SolitoAppProps } from 'solito'
@@ -24,9 +24,9 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <meta name="description" content="Deriv Air" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Provider>
+      <ComponentsProvider>
         <Component {...pageProps} />
-      </Provider>
+      </ComponentsProvider>
     </>
   )
 }
