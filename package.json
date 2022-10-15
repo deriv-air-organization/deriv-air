@@ -8,8 +8,6 @@
       "packages/modules/*"
     ],
     "nohoist": [
-      "**/expo-router",
-      "**/expo-router/**",
       "**/electron",
       "**/electron/**",
       "**/electron-*",
@@ -30,6 +28,7 @@
     "native:android": "yarn workspace @deriv-air/native android",
     "native:android:build": "yarn workspace @deriv-air/native android:build",
     "native:ios": "yarn workspace @deriv-air/native ios",
+    "native:ios:pod": "yarn workspace @deriv-air/native ios:pod",
     "native:start": "yarn workspace @deriv-air/native start",
     "mobile:dev": "yarn workspace @deriv-air/mobile start",
     "mobile:android": "yarn workspace @deriv-air/mobile android",
@@ -53,5 +52,9 @@
   },
   "resolutions": {
     "metro": "0.72.3"
-  }
+  },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ]
 }
