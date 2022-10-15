@@ -2,7 +2,7 @@ import { H3, View } from 'dripsy'
 import React from 'react'
 
 export function Desktop() {
-  const Placeholder = ({ color, name, ...props }) => {
+  const Placeholder = ({ color, name, ...props }: any) => {
     return (
       <View
         sx={{
