@@ -1,0 +1,11 @@
+appId: com.deriv.air
+productName: Deriv Air
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

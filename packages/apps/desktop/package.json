@@ -1,0 +1,29 @@
+{
+  "name": "@deriv-air/desktop",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app/background.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "dev": "nextron",
+    "build": "nextron build",
+    "start": "nextron",
+    "postinstall": "npx electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "@types/react": "~18.0.0",
+    "electron": "^20.1.0",
+    "electron-builder": "^23.3.3",
+    "next": "^12.2.5",
+    "nextron": "^8.2.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "typescript": "^4.8.3"
+  }
+}
