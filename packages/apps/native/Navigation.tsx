@@ -32,16 +32,12 @@ export function Navigation() {
         <Stack.Screen
           name="trader"
           component={TraderScreen}
-          options={{
-            title: 'Trader',
-          }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="reports"
           component={ReportsScreen}
-          options={{
-            title: 'Reports',
-          }}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

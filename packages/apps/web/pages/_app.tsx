@@ -1,4 +1,5 @@
 import 'raf/polyfill'
+import '../styles.css'
 
 const fixReanimatedIssue = () => {
   // FIXME remove this once this reanimated fix gets released

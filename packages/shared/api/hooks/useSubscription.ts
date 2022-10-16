@@ -17,7 +17,7 @@ const useSubscription = <T extends TSocketSubscribableEndpointNames>(
   const api = useAPI()
 
   const onData = (response: any) => {
-    setData(response[name])
+    setData(response[name === 'ticks' ? 'tick' : name])
     setIsLoading(false)
   }
 

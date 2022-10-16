@@ -23,6 +23,8 @@ import {
   ServerStatusResponse,
   TermsAndConditionsApprovalRequest,
   TermsAndConditionsApprovalResponse,
+  TicksStreamRequest,
+  TicksStreamResponse,
   TransferBetweenAccountsRequest,
   TransferBetweenAccountsResponse,
   VerifyEmailRequest,
@@ -86,6 +88,10 @@ export type TSocketEndpoints = {
     request: BalanceRequest
     response: BalanceResponse
   }
+  ticks: {
+    request: TicksStreamRequest
+    response: TicksStreamResponse
+  }
 }
 
 export type TSocketEndpointNames = keyof TSocketEndpoints
@@ -98,7 +104,7 @@ export type TSocketResponse<T extends TSocketEndpointNames> =
   TSocketEndpoints[T]['response']
 
 export type TSocketResponseData<T extends TSocketEndpointNames> =
-  TSocketResponse<T>[T]
+  TSocketResponse<T>[T extends 'ticks' ? 'tick' : T]
 
 export type TSocketRequest<T extends TSocketEndpointNames> =
   TSocketEndpoints[T]['request']

@@ -4,7 +4,7 @@ import React, { useMemo } from 'react'
 
 type TProps = {
   title: string
-  onPress: () => void
+  onPress?: () => void
 }
 
 export function Button({ title, onPress }: TProps) {
@@ -23,8 +23,15 @@ export function Button({ title, onPress }: TProps) {
         []
       )}
     >
-      <View sx={{ p: 12, borderRadius: 4, backgroundColor: 'pink' }}>
-        <Text>{title}</Text>
+      <View
+        sx={({ colors }) => ({
+          paddingVertical: 6,
+          paddingHorizontal: 16,
+          borderRadius: 4,
+          backgroundColor: colors.$primary,
+        })}
+      >
+        <Text sx={{ color: '#fff' }}>{title}</Text>
       </View>
     </MotiPressable>
   )
