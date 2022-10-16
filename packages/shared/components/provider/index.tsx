@@ -1,8 +1,8 @@
 import { DripsyProvider } from 'dripsy'
 import React from 'react'
 import { useColorScheme } from 'react-native'
-import { darkTheme } from '../themes/dark'
-import { lightTheme } from '../themes/light'
+import { SafeArea } from '../safe-area'
+import { darkTheme, lightTheme } from '../themes'
 
 type TProps = {
   children: React.ReactNode
@@ -17,7 +17,7 @@ export function Provider({ children }: TProps) {
       // this disables SSR, since react-native-web doesn't have support for it (yet)
       ssr
     >
-      {children}
+      <SafeArea>{children}</SafeArea>
     </DripsyProvider>
   )
 }

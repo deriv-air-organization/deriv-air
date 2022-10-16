@@ -73,6 +73,8 @@ const createWindow = (
   const browserOptions: BrowserWindowConstructorOptions = {
     ...options,
     ...state,
+    minWidth: 400,
+    minHeight: 550,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
