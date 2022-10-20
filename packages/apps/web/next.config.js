@@ -12,6 +12,7 @@ const withTM = require('next-transpile-modules')([
   '@deriv-air/components',
   '@deriv-air/reports',
   '@deriv-air/trader',
+  '@deriv-air/authorization',
 ])
 
 /** @type {import('next').NextConfig} */

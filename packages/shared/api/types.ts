@@ -7,6 +7,8 @@ import {
   CryptocurrencyConfigurationsResponse,
   ExchangeRatesRequest,
   ExchangeRatesResponse,
+  NewVirtualMoneyAccountRequest,
+  NewVirtualMoneyAccountResponse,
   P2POrderInformationRequest,
   P2POrderInformationResponse,
   PaymentAgentDetailsRequest,
@@ -91,6 +93,10 @@ export type TSocketEndpoints = {
   ticks: {
     request: TicksStreamRequest
     response: TicksStreamResponse
+  },
+  new_account_virtual: {
+    request: NewVirtualMoneyAccountRequest
+    response: NewVirtualMoneyAccountResponse
   }
 }
 
