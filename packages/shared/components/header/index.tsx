@@ -4,7 +4,7 @@ import { Button } from '../button'
 import { useRouter } from 'solito/router'
 
 export function Header() {
-  const { push, replace, back, parseNextPath } = useRouter()
+  const { push } = useRouter()
   return (
     <View
       sx={({ colors }) => ({
