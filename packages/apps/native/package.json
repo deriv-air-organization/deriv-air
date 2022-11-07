@@ -15,6 +15,7 @@
     "ios:pod": "cd ios && pod install && cd .."
   },
   "dependencies": {
+    "@deriv-air/authorization": "*",
     "@deriv-air/components": "*",
     "@deriv-air/reports": "*",
     "@deriv-air/trader": "*",

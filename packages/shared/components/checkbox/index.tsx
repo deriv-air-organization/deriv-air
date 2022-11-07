@@ -32,7 +32,7 @@ export function Checkbox({ label, value, onChange, disabled }: TProps) {
               height: '100%',
               borderRadius: 2,
               borderWidth: 2,
-              borderColor: '#999999',
+              borderColor: '$disabled',
             }}
           />
           <MotiView

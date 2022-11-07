@@ -1,44 +1,57 @@
 import useWS from '@deriv-air/api/hooks/useWS'
-
-import React, { useEffect, useState } from 'react'
 import { Button } from '@deriv-air/components/button'
-// import type { SolitoAppProps } from 'solito'
+import { Center } from '@deriv-air/components/center'
+import { Page } from '@deriv-air/components/page'
+import { H2, TextInput, useDripsyTheme, useSx } from 'dripsy'
+import React, { useState } from 'react'
 
 export function VerificationEmail() {
   const [email, setEmail] = useState('')
-  const [emailSent, setEmailSent] = useState(false)
-  const verificationEmail = useWS('verify_email')
+  const verifyEmail = useWS('verify_email')
+  const {
+    theme: { colors },
+  } = useDripsyTheme()
+  const sx = useSx()
 
-  useEffect(() => {
-    if (verificationEmail.data) setEmailSent(true)
-  }, [verificationEmail.data])
-
-  function sendEmail() {
-    verificationEmail.send({
-      verify_email: email,
-      type: 'account_opening',
-    })
-  }
+  if (verifyEmail.data)
+    return (
+      <Page>
+        <Center sx={{ flex: 1 }}>
+          <H2>
+            A verification code was sent to you email, Please check your inbox.
+          </H2>
+        </Center>
+      </Page>
+    )
 
   return (
-    <>
-      {!emailSent ? (
-        <div>
-          email address:
-          <input
-            type="text"
-            onChange={(e) => {
-              setEmail(e.target.value)
-            }}
-          />
-          <br />
-          <Button title="send email" onPress={sendEmail} />
-        </div>
-      ) : (
-        <div>
-          a verification code was sent to you email. please check your inbox{' '}
-        </div>
-      )}
-    </>
+    <Page>
+      <Center sx={{ flex: 1 }}>
+        <H2>Enter your email address</H2>
+        <TextInput
+          placeholder="name@example.com"
+          placeholderTextColor={colors.$disabled}
+          style={sx({
+            borderColor: '$border',
+            borderWidth: 2,
+            borderRadius: 4,
+            padding: '$2',
+            outlineStyle: 'none',
+            color: '$text',
+            marginBottom: '$4',
+          })}
+          onChangeText={(value) => setEmail(value)}
+        />
+        <Button
+          title="Send Email"
+          onPress={() =>
+            verifyEmail.send({
+              verify_email: email,
+              type: 'account_opening',
+            })
+          }
+        />
+      </Center>
+    </Page>
   )
 }
