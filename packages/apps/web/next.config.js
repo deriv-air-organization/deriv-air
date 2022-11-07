@@ -10,6 +10,7 @@ const withTM = require('next-transpile-modules')([
   '@deriv-air/api',
   '@deriv-air/chart',
   '@deriv-air/components',
+  '@deriv-air/hooks',
   '@deriv-air/reports',
   '@deriv-air/trader',
   '@deriv-air/authorization',
