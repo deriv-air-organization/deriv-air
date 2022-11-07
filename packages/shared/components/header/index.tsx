@@ -1,8 +1,11 @@
 import { H4, View } from 'dripsy'
 import React from 'react'
+import { useRouter } from 'solito/router'
 import { Button } from '../button'
 
 export function Header() {
+  const { push } = useRouter()
+
   return (
     <View
       sx={({ colors }) => ({
@@ -15,9 +18,9 @@ export function Header() {
     >
       <H4>Deriv Air</H4>
       <View sx={{ flex: 1 }} />
-      <Button title="Log in" />
+      <Button onPress={() => push('/login')} title="Log in" />
       <View sx={{ width: 8 }} />
-      <Button title="Sign up" />
+      <Button onPress={() => push('/signup')} title="Sign up" />
     </View>
   )
 }

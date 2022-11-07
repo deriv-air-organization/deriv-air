@@ -1,3 +1,5 @@
+import RedirectScreen from '@deriv-air/authorization/account-creation'
+import SignupScreen from '@deriv-air/authorization/verification-email'
 import { ReportsScreen } from '@deriv-air/reports/screen'
 import { TraderScreen } from '@deriv-air/trader/screen'
 import { NavigationContainer } from '@react-navigation/native'
@@ -8,6 +10,10 @@ const Stack = createNativeStackNavigator<{
   trader: undefined
   reports: {
     id: string
+  }
+  signup: undefined
+  redirect: {
+    code: string
   }
 }>()
 
@@ -22,6 +28,8 @@ export function Navigation() {
             screens: {
               trader: '',
               reports: 'reports/:id',
+              signup: 'signup',
+              redirect: 'redirect/:code',
             },
           },
         }),
@@ -37,6 +45,16 @@ export function Navigation() {
         <Stack.Screen
           name="reports"
           component={ReportsScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="signup"
+          component={SignupScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="redirect"
+          component={RedirectScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
