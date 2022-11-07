@@ -14,6 +14,7 @@
     "ios:build": "eas build -p ios"
   },
   "dependencies": {
+    "@deriv-air/authorization": "*",
     "@deriv-air/components": "*",
     "@deriv-air/reports": "*",
     "@deriv-air/trader": "*",

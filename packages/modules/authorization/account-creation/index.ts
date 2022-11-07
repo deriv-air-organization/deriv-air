@@ -1,3 +1,3 @@
-import { AccountCreation } from "./account-creation";
+import { AccountCreation } from './account-creation'
 
-export default AccountCreation;
+export default AccountCreation
