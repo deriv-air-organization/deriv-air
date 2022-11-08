@@ -1,0 +1,14 @@
+{
+  "version": "0.0.0",
+  "name": "@deriv-air/stores",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "xstate": "4.34.0",
+    "@xstate/react": "3.0.1"
+  },
+  "sideEffects": false
+}
