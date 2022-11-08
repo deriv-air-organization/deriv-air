@@ -23,7 +23,11 @@ export function Header() {
       {!isHomepage && <View sx={{ width: 8 }} />}
       <H4>Deriv Air</H4>
       <View sx={{ flex: 1 }} />
-      <Button onPress={() => push('/login')} title="Log in" />
+      <Button
+        type="primary-light"
+        onPress={() => push('/login')}
+        title="Log in"
+      />
       <View sx={{ width: 8 }} />
       <Button onPress={() => push('/signup')} title="Sign up" />
     </View>
