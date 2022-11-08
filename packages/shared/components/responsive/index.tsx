@@ -1,4 +1,4 @@
-import { useWindowDimensions } from 'react-native'
+import { useIsMobile } from '@deriv-air/hooks/use-is-mobile'
 
 type TProps = {
   mobile: JSX.Element
@@ -6,8 +6,7 @@ type TProps = {
 }
 
 export function Responsive({ mobile, desktop }: TProps) {
-  const { width } = useWindowDimensions()
-  const isMobile = width <= 768
+  const isMobile = useIsMobile()
 
   return isMobile ? mobile : desktop
 }
