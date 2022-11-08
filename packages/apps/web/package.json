@@ -15,6 +15,7 @@
     "@deriv-air/components": "*",
     "@deriv-air/reports": "*",
     "@deriv-air/trader": "*",
+    "@deriv-air/stores": "*",
     "next": "^12.2.5",
     "raf": "^3.4.1"
   },

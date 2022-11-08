@@ -18,6 +18,7 @@
     "@deriv-air/components": "*",
     "@deriv-air/reports": "*",
     "@deriv-air/trader": "*",
+    "@deriv-air/stores": "*",
     "expo": "~46.0.13",
     "expo-router": "^0.0.25",
     "expo-splash-screen": "~0.16.2",
