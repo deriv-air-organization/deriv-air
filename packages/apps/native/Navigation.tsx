@@ -8,9 +8,7 @@ import React, { useMemo } from 'react'
 
 const Stack = createNativeStackNavigator<{
   trader: undefined
-  reports: {
-    id: string
-  }
+  reports: undefined
   signup: undefined
   redirect: {
     code: string
@@ -27,7 +25,7 @@ export function Navigation() {
             initialRouteName: 'trader',
             screens: {
               trader: '',
-              reports: 'reports/:id',
+              reports: 'reports',
               signup: 'signup',
               redirect: 'redirect/:code',
             },

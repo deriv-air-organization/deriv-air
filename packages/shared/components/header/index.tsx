@@ -3,11 +3,11 @@ import { H4, View } from 'dripsy'
 import React from 'react'
 import { useRouter } from 'solito/router'
 import { Button } from '../button'
+import { Spacer } from '../spacer'
 
 export function Header() {
   const { push, back } = useRouter()
-  const path = useCurrentPath()
-  const isHomepage = path === '/'
+  const { isHomepage, isReports } = useCurrentPath()
 
   return (
     <View
@@ -20,15 +20,23 @@ export function Header() {
       })}
     >
       {!isHomepage && <Button onPress={back} title="‹" />}
-      {!isHomepage && <View sx={{ width: 8 }} />}
+      {!isHomepage && <Spacer />}
       <H4>Deriv Air</H4>
+      <Spacer />
+      {!isReports && (
+        <Button
+          type="monochrome"
+          onPress={() => push('/reports')}
+          title="Reports"
+        />
+      )}
       <View sx={{ flex: 1 }} />
       <Button
         type="primary-light"
-        onPress={() => push('/login')}
+        onPress={() => push('/redirect/123')}
         title="Log in"
       />
-      <View sx={{ width: 8 }} />
+      <Spacer />
       <Button onPress={() => push('/signup')} title="Sign up" />
     </View>
   )
