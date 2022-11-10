@@ -15,9 +15,11 @@
     "ios:pod": "cd ios && pod install && cd .."
   },
   "dependencies": {
+    "@deriv-air/authorization": "*",
     "@deriv-air/components": "*",
     "@deriv-air/reports": "*",
     "@deriv-air/trader": "*",
+    "@deriv-air/stores": "*",
     "react": "18.0.0",
     "react-native": "0.69.6",
     "@react-navigation/native": "^6.0.8",

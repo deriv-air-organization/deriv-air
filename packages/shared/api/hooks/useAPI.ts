@@ -9,7 +9,7 @@ export const useAPI = () => {
   if (api) return api
 
   const connection = new WebSocket(
-    'wss://qa10.deriv.dev/websockets/v3?app_id=3322'
+    'wss://ws.binaryws.com/websockets/v3?app_id=1089'
   )
 
   api = new DerivAPIBasic({ connection })

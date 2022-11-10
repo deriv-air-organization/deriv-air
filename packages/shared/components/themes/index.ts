@@ -4,14 +4,20 @@ const darkColors = {
   $text: '#fff',
   $background: '#0e0e0e',
   $border: '#151717',
+  $disabled: '#6e6e6e',
   $primary: '#ff444f',
+  $failure: '#d33636',
+  $success: '#3d9494',
 }
 
 const lightColors: typeof darkColors = {
   $text: '#000',
   $background: '#fff',
   $border: '#f2f3f4',
+  $disabled: '#999999',
   $primary: '#ff444f',
+  $failure: '#d33636',
+  $success: '#3d9494',
 }
 
 export const darkTheme = makeTheme({
